@@ -34,6 +34,9 @@ dict_horaires = { 0:"0001-0559", 6:"0600-0659", 7:"0700-0759", 8:"0800-0859", 9:
 
 @app.route('/delay/')
 def delay():
+
+		return "Hello" 
+		
     origin = request.args.get('origin') 
     dest = request.args.get('dest') 
     dep = request.args.get('dep') 
