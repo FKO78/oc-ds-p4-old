@@ -7,7 +7,7 @@ SECRET_KEY = "1bdbeeb07ac5163c68bd205eb0d11dec"
 
 FB_APP_ID = 2640045952990513
 
-#basedir = os.path.abspath(os.path.dirname(__file__))
-#SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db') 
+basedir = os.path.abspath(os.path.dirname(__file__))
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db') 
 
 SOURCE_FILE = 'OC_DS_P4_run.pkl' 

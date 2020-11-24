@@ -1,0 +1,18 @@
+#! /usr/bin/env python
+import flask_movies
+from flask_movies import app
+import pickle 
+
+# Config options - Make sure you created a 'config.py' file.
+app.config.from_object('config')
+# To get one variable, tape app.config['MY_VARIABLE']
+
+with open(app.config['SOURCE_FILE'], 'rb') as file: 
+    unpickler = pickle.Unpickler(file)
+    dict_regr = unpickler.load()    
+    trips = unpickler.load()    
+    CITY_lbl = unpickler.load()    
+    std_scale = unpickler.load()    
+    
+if __name__ == "__main__":
+    app.run(debug=True)

@@ -1,2 +1,2 @@
-web: gunicorn oc_ds_p4:app
-init: FLASK_APP=run.py flask 
+web: gunicorn OC_DS_P4:app
+init: FLASK_APP=run.py flask init_db
